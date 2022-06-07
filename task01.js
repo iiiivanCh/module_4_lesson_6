@@ -3,7 +3,7 @@
 const allStudents = ['Иванов', 'Петров', 'Сидоров', 'Кузнецов', 'Смирнов', 'Попов', 'Соколов', 'Федоров'];
 const failedStudents = ['Сидоров', 'Смирнов', 'Попов', 'Петров'];
 
-const goodStudents = (allStudents, failedStudents) => {
+const doFilter = (allStudents, failedStudents) => {
   let good = [];
   for (let i = 0; i < allStudents.length; i++) {
     let index = 1;
@@ -19,5 +19,5 @@ const goodStudents = (allStudents, failedStudents) => {
   console.log(good);
 }
 
-goodStudents(allStudents, failedStudents);
+doFilter(allStudents, failedStudents);
 
